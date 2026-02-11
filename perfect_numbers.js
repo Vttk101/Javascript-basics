@@ -15,9 +15,12 @@ const sumNum = (number) => {
 
 const isPerfect = (number) => {
     let result = sumNum(number)
-    if (number === result) {
-        return true
+    if (number < 6) {
+        return false
     } 
+    else if (number === result) {
+        return true
+    }
     else {
         return false
     }
